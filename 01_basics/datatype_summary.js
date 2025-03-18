@@ -9,7 +9,7 @@ let useremail;
 const id=Symbol("123")
 const anotherid=Symbol("123")
 
-console.log(id==anotherid);
+//console.log(id==anotherid);
 
 const heros=["caption","spiderman","hulk"];
 
@@ -26,3 +26,26 @@ const myfun= function(){
     
 }
 
+
+
+
+//------------------------------------------------------------------------------
+
+//stack (primitive),Heap memory(non-primitive)
+
+let myname="Arya"
+let anothername=myname
+anothername="Arya1"
+console.log(myname);
+console.log(anothername);
+
+
+//non
+let userone={
+    name:"Arya",
+    id:1
+}
+let usertwo=userone
+usertwo.name="bye"
+console.log(userone.name)
+console.log(usertwo.name)
